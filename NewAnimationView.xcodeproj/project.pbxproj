@@ -14,6 +14,14 @@
 		EFD46C232B8854A200F3E9E6 /* NewAnimationViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD46C222B8854A200F3E9E6 /* NewAnimationViewTests.swift */; };
 		EFD46C2D2B8854A200F3E9E6 /* NewAnimationViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD46C2C2B8854A200F3E9E6 /* NewAnimationViewUITests.swift */; };
 		EFD46C2F2B8854A200F3E9E6 /* NewAnimationViewUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD46C2E2B8854A200F3E9E6 /* NewAnimationViewUITestsLaunchTests.swift */; };
+		EFD46C442B8854DF00F3E9E6 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD46C3D2B8854DF00F3E9E6 /* Model.swift */; };
+		EFD46C452B8854DF00F3E9E6 /* LikeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD46C3F2B8854DF00F3E9E6 /* LikeView.swift */; };
+		EFD46C462B8854DF00F3E9E6 /* BlurEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD46C412B8854DF00F3E9E6 /* BlurEffect.swift */; };
+		EFD46C472B8854DF00F3E9E6 /* TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD46C422B8854DF00F3E9E6 /* TextView.swift */; };
+		EFD46C482B8854DF00F3E9E6 /* MainCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD46C432B8854DF00F3E9E6 /* MainCardView.swift */; };
+		EFD46C4E2B88570600F3E9E6 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD46C4D2B88570600F3E9E6 /* Color.swift */; };
+		EFD46C502B885E2900F3E9E6 /* SendLikeAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD46C4F2B885E2900F3E9E6 /* SendLikeAnimation.swift */; };
+		EFD46C522B885E4B00F3E9E6 /* MatchAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD46C512B885E4B00F3E9E6 /* MatchAnimation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +52,14 @@
 		EFD46C282B8854A200F3E9E6 /* NewAnimationViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewAnimationViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFD46C2C2B8854A200F3E9E6 /* NewAnimationViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAnimationViewUITests.swift; sourceTree = "<group>"; };
 		EFD46C2E2B8854A200F3E9E6 /* NewAnimationViewUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAnimationViewUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EFD46C3D2B8854DF00F3E9E6 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		EFD46C3F2B8854DF00F3E9E6 /* LikeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LikeView.swift; sourceTree = "<group>"; };
+		EFD46C412B8854DF00F3E9E6 /* BlurEffect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlurEffect.swift; sourceTree = "<group>"; };
+		EFD46C422B8854DF00F3E9E6 /* TextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextView.swift; sourceTree = "<group>"; };
+		EFD46C432B8854DF00F3E9E6 /* MainCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainCardView.swift; sourceTree = "<group>"; };
+		EFD46C4D2B88570600F3E9E6 /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		EFD46C4F2B885E2900F3E9E6 /* SendLikeAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendLikeAnimation.swift; sourceTree = "<group>"; };
+		EFD46C512B885E4B00F3E9E6 /* MatchAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchAnimation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,10 +110,11 @@
 		EFD46C102B8854A100F3E9E6 /* NewAnimationView */ = {
 			isa = PBXGroup;
 			children = (
-				EFD46C112B8854A100F3E9E6 /* NewAnimationViewApp.swift */,
-				EFD46C132B8854A100F3E9E6 /* ContentView.swift */,
-				EFD46C152B8854A200F3E9E6 /* Assets.xcassets */,
 				EFD46C172B8854A200F3E9E6 /* Preview Content */,
+				EFD46C492B8854E300F3E9E6 /* Window */,
+				EFD46C4A2B8854EE00F3E9E6 /* Assets */,
+				EFD46C3B2B8854DF00F3E9E6 /* LikeView */,
+				EFD46C132B8854A100F3E9E6 /* ContentView.swift */,
 			);
 			path = NewAnimationView;
 			sourceTree = "<group>";
@@ -125,6 +142,77 @@
 				EFD46C2E2B8854A200F3E9E6 /* NewAnimationViewUITestsLaunchTests.swift */,
 			);
 			path = NewAnimationViewUITests;
+			sourceTree = "<group>";
+		};
+		EFD46C3B2B8854DF00F3E9E6 /* LikeView */ = {
+			isa = PBXGroup;
+			children = (
+				EFD46C4B2B8856FC00F3E9E6 /* Extension */,
+				EFD46C3C2B8854DF00F3E9E6 /* Model */,
+				EFD46C3E2B8854DF00F3E9E6 /* View */,
+			);
+			path = LikeView;
+			sourceTree = "<group>";
+		};
+		EFD46C3C2B8854DF00F3E9E6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EFD46C3D2B8854DF00F3E9E6 /* Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EFD46C3E2B8854DF00F3E9E6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EFD46C402B8854DF00F3E9E6 /* CustomView */,
+				EFD46C3F2B8854DF00F3E9E6 /* LikeView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EFD46C402B8854DF00F3E9E6 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				EFD46C412B8854DF00F3E9E6 /* BlurEffect.swift */,
+				EFD46C422B8854DF00F3E9E6 /* TextView.swift */,
+				EFD46C432B8854DF00F3E9E6 /* MainCardView.swift */,
+				EFD46C4F2B885E2900F3E9E6 /* SendLikeAnimation.swift */,
+				EFD46C512B885E4B00F3E9E6 /* MatchAnimation.swift */,
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
+		EFD46C492B8854E300F3E9E6 /* Window */ = {
+			isa = PBXGroup;
+			children = (
+				EFD46C112B8854A100F3E9E6 /* NewAnimationViewApp.swift */,
+			);
+			path = Window;
+			sourceTree = "<group>";
+		};
+		EFD46C4A2B8854EE00F3E9E6 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				EFD46C152B8854A200F3E9E6 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		EFD46C4B2B8856FC00F3E9E6 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				EFD46C4C2B88570000F3E9E6 /* Color */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		EFD46C4C2B88570000F3E9E6 /* Color */ = {
+			isa = PBXGroup;
+			children = (
+				EFD46C4D2B88570600F3E9E6 /* Color.swift */,
+			);
+			path = Color;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +345,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFD46C442B8854DF00F3E9E6 /* Model.swift in Sources */,
+				EFD46C452B8854DF00F3E9E6 /* LikeView.swift in Sources */,
 				EFD46C142B8854A100F3E9E6 /* ContentView.swift in Sources */,
+				EFD46C502B885E2900F3E9E6 /* SendLikeAnimation.swift in Sources */,
+				EFD46C472B8854DF00F3E9E6 /* TextView.swift in Sources */,
 				EFD46C122B8854A100F3E9E6 /* NewAnimationViewApp.swift in Sources */,
+				EFD46C522B885E4B00F3E9E6 /* MatchAnimation.swift in Sources */,
+				EFD46C4E2B88570600F3E9E6 /* Color.swift in Sources */,
+				EFD46C482B8854DF00F3E9E6 /* MainCardView.swift in Sources */,
+				EFD46C462B8854DF00F3E9E6 /* BlurEffect.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
