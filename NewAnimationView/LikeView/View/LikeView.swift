@@ -129,6 +129,7 @@ public struct LikeView: View {
                         print("SendLikeAnimation onDisappear")
                         showLikeAnimation = false
                     }
+                    .edgesIgnoringSafeArea(.bottom)
             }
             
             if matchAnimation {
@@ -137,6 +138,7 @@ public struct LikeView: View {
                         print("MatchAnimation onDisappear")
                         matchAnimation = false
                     }
+                    .edgesIgnoringSafeArea(.bottom)
             }
         }
         .ignoresSafeArea(.keyboard, edges: .all)
@@ -293,7 +295,7 @@ public extension LikeView {
                             onAppearAnimation = false
                         }
                         
-                        DispatchQueue.main.asyncAfter(deadline: .now() + 0.8) {
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 0.6) {
                             openState = false
                         }
                         

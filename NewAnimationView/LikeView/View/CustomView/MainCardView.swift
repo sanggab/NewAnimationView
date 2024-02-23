@@ -93,6 +93,7 @@ public struct MainCardView: View {
     public var textCardView: some View {
         ZStack(alignment: .topLeading) {
             let viewSize: CGSize = CGSize(width: contentSize.width - 24, height: contentSize.width - 24)
+            let height: CGFloat = style.aboutMeStyle.size.height < 100 ? contentSize.width - 24 - style.aboutMeStyle.size.height : style.aboutMeStyle.size.height
             
             VStack(alignment: .leading, spacing: 0) {
                 Text("About me")
@@ -105,16 +106,21 @@ public struct MainCardView: View {
                     .foregroundColor(.gray20)
                     .padding(.top, parentState ? 16 : 8)
             }
-            .frame(width: parentState ? viewSize.width - 32 : style.aboutMeStyle.size.width , height: parentState ? viewSize.height - 35 - (boxHeight / 2) - 6 : style.aboutMeStyle.size.height, alignment: .topLeading)
+            .frame(width: parentState ? viewSize.width - 32 : style.aboutMeStyle.size.width , height: parentState ? viewSize.height - 35 - (boxHeight / 2) - 6 : height, alignment: .topLeading)
             .offset(x: parentState ? 16 : style.aboutMeStyle.leading, y: parentState ? 36 : style.aboutMeStyle.top)
+            .fixedSize()
         }
         .frame(width: parentState ? contentSize.width - 24 : style.size.width, height: parentState ? contentSize.width - 24 : style.size.height, alignment: .topLeading)
-        .background(.white248)
+        .background(parentState ? .white248 : style.aboutMeStyle.color)
         .cornerRadius(12)
         .onAppear {
-            withAnimation(.linear(duration: 0.2)) {
+            withAnimation(.spring()) {
                 parentState = true
             }
+//
+//            withAnimation(.linear(duration: 0.2)) {
+//                parentState = true
+//            }
         }
         .shadow(color: .black.opacity(0.08), radius: 6, x: 0, y: 0)
         .padding(.horizontal, parentState ? 12 : 0)

@@ -30,24 +30,27 @@ import SwiftUI
 }
 
 @frozen public struct LikeAboutMeStyle {
-    public static let zero = LikeAboutMeStyle(top: 0, leading: 0, trailing: 0, bottom: 0, size: .zero)
+    public static let zero = LikeAboutMeStyle(top: 0, leading: 0, trailing: 0, bottom: 0, size: .zero, color: .white248)
     
     public let top: CGFloat
     public let leading: CGFloat
     public let trailing: CGFloat
     public let bottom:CGFloat
     public let size: CGSize
+    public let color: Color
     
     public init(top: CGFloat,
                 leading: CGFloat,
                 trailing: CGFloat,
                 bottom: CGFloat,
-                size: CGSize) {
+                size: CGSize,
+                color: Color) {
         self.top = top
         self.leading = leading
         self.trailing = trailing
         self.bottom = bottom
         self.size = size
+        self.color = color
     }
 }
 
