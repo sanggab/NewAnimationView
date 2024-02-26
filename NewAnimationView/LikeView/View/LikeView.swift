@@ -43,12 +43,23 @@ public struct LikeView: View {
                     BlurEffect(effectStyle: .light, intensity: 50)
                         .frame(maxWidth: .infinity, maxHeight: .infinity)
                         .edgesIgnoringSafeArea(.bottom)
+                        .onTapGesture {
+                            if textViewAnimationState {
+                                keyBoardState = false
+                            }
+                        }
                 }
                 
                 MainCardView(parentState: $viewControlState,
                              style: style,
                              contentSize: proxy.size)
                     .inputBoxHeight(boxHeight)
+                    .opacity(style.state == .original && textViewAnimationState ? 0.5 : 1)
+                    .onTapGesture {
+                        if textViewAnimationState {
+                            keyBoardState = false
+                        }
+                    }
                 
                 if style.type == .match {
                     matchBoxView(proxy)
