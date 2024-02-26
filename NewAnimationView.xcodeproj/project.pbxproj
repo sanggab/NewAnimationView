@@ -22,6 +22,7 @@
 		EFD46C4E2B88570600F3E9E6 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD46C4D2B88570600F3E9E6 /* Color.swift */; };
 		EFD46C502B885E2900F3E9E6 /* SendLikeAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD46C4F2B885E2900F3E9E6 /* SendLikeAnimation.swift */; };
 		EFD46C522B885E4B00F3E9E6 /* MatchAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD46C512B885E4B00F3E9E6 /* MatchAnimation.swift */; };
+		EFEEC8E02B8C0C5200095CAC /* RejectAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFEEC8DF2B8C0C5200095CAC /* RejectAnimationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		EFD46C4D2B88570600F3E9E6 /* Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		EFD46C4F2B885E2900F3E9E6 /* SendLikeAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendLikeAnimation.swift; sourceTree = "<group>"; };
 		EFD46C512B885E4B00F3E9E6 /* MatchAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchAnimation.swift; sourceTree = "<group>"; };
+		EFEEC8DF2B8C0C5200095CAC /* RejectAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RejectAnimationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,6 +181,7 @@
 				EFD46C432B8854DF00F3E9E6 /* MainCardView.swift */,
 				EFD46C4F2B885E2900F3E9E6 /* SendLikeAnimation.swift */,
 				EFD46C512B885E4B00F3E9E6 /* MatchAnimation.swift */,
+				EFEEC8DF2B8C0C5200095CAC /* RejectAnimationView.swift */,
 			);
 			path = CustomView;
 			sourceTree = "<group>";
@@ -346,6 +349,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EFD46C442B8854DF00F3E9E6 /* Model.swift in Sources */,
+				EFEEC8E02B8C0C5200095CAC /* RejectAnimationView.swift in Sources */,
 				EFD46C452B8854DF00F3E9E6 /* LikeView.swift in Sources */,
 				EFD46C142B8854A100F3E9E6 /* ContentView.swift in Sources */,
 				EFD46C502B885E2900F3E9E6 /* SendLikeAnimation.swift in Sources */,

@@ -74,6 +74,7 @@ public struct MainCardView: View {
             }
             .frame(width: parentState ? contentSize.width - 24 : style.size.width, height: parentState ? contentSize.width - 24 : style.size.height)
             .cornerRadius(12)
+            .shadow(color: .black.opacity(0.08), radius: 6, x: 0, y: 0)
             .padding(.horizontal, parentState ? 12 : 0)
             .offset(x: parentState ? 0 : style.point.x, y: parentState ? 124 : style.point.y)
             .onAppear {
@@ -117,10 +118,6 @@ public struct MainCardView: View {
             withAnimation(.spring()) {
                 parentState = true
             }
-//
-//            withAnimation(.linear(duration: 0.2)) {
-//                parentState = true
-//            }
         }
         .shadow(color: .black.opacity(0.08), radius: 6, x: 0, y: 0)
         .padding(.horizontal, parentState ? 12 : 0)
