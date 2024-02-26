@@ -37,7 +37,7 @@ public struct ContentView: View {
                             let test = proxy.frame(in: .named("스크롤")).origin
                             let newOrigin = CGPoint(x: imageOrigin.x + test.x, y: imageOrigin.y + test.y)
                             
-                            style = LikeSendStyle(state: .original,
+                            style = LikeSendStyle(state: .delete,
                                                   type: .Like,
                                                   mainCard: .image,
                                                   thumbnailImgUrl: "도화가23",
@@ -162,7 +162,7 @@ public struct ContentView: View {
                     .onTapGesture {
                         let test = proxy.frame(in: .named("스크롤")).origin
                         let newOrigin = CGPoint(x: textOrigin2.x + test.x, y: textOrigin2.y + test.y)
-                        style = LikeSendStyle(state: .original,
+                        style = LikeSendStyle(state: .delete,
                                               type: .match,
                                               mainCard: .text,
                                               comment: "Liked your \"about me\"",

@@ -70,6 +70,7 @@ public struct MainCardView: View {
                                 .padding(.top, 6)
                         }
                     }
+                    .opacity(parentState ? 1 : 0)
                 }
             }
             .frame(width: parentState ? contentSize.width - 24 : style.size.width, height: parentState ? contentSize.width - 24 : style.size.height)
@@ -113,6 +114,32 @@ public struct MainCardView: View {
         }
         .frame(width: parentState ? contentSize.width - 24 : style.size.width, height: parentState ? contentSize.width - 24 : style.size.height, alignment: .topLeading)
         .background(parentState ? .white248 : style.aboutMeStyle.color)
+        .overlay {
+            if style.state == .delete {
+                ZStack {
+                    BlurEffect(effectStyle: .light, intensity: 50)
+                        .frame(maxWidth: .infinity, maxHeight: .infinity)
+                        .overlay {
+                            Color.black
+                                .opacity(0.4)
+                        }
+                        .cornerRadius(12)
+                    
+                    VStack(spacing: 0) {
+                        Image("imgDeletedContent")
+                            .resizable()
+                            .frame(width: 80, height: 80)
+
+                        Text("Deleted Content")
+                            .font(.system(size: 16, weight: .medium))
+                            .foregroundColor(.white)
+                            .lineLimit(1)
+                            .padding(.top, 6)
+                    }
+                }
+                .opacity(parentState ? 1 : 0)
+            }
+        }
         .cornerRadius(12)
         .onAppear {
             withAnimation(.spring()) {
